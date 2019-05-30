@@ -1,0 +1,297 @@
+$primary-font: "Sofia",
+cursive;
+$second-font: "Work Sans",
+sans-serif;
+$bg-black: rgb(10, 20, 16);
+$info-bg-black: rgba(10, 10, 16, 0.9);
+$black-color: #0A0A10;
+$text-primary-color: rgb(240, 240, 240);
+$text-secondary-color: rgb(220, 220, 220);
+$text-ternary-color: gray;
+$bold-text: 700;
+$light-text: 400;
+$parallax-image-1: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+$parallax-image-2: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+$phone-screen: 600px;
+$width: 100%;
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: $bg-black;
+  font-family: $primary-font;
+  color: $text-primary-color;
+}
+
+@mixin border-radius($tl, $tr, $bl, $br) {
+  border-radius: $tl $tr $bl $br
+}
+
+@mixin margin($x, $y) {
+  margin: $x $y
+}
+
+@mixin padding($x, $y) {
+  padding: $x $y
+}
+
+@mixin font-bold {
+  font-weight: $bold-text;
+}
+
+@mixin text-white {
+  color: $text-primary-color;
+}
+
+@mixin text-center {
+  text-align: center;
+}
+
+@mixin h4 {
+  h4 {
+    font-family: $second-font;
+    font-weight: $light-text;
+    color: $text-secondary-color;
+  }
+}
+
+@mixin h2 {
+  h2 {
+    font-size: 30px;
+    @include font-bold();
+  }
+}
+
+@mixin media() {
+  @media only screen and (max-width: $phone-screen) {
+    @content;
+  }
+}
+
+.parallax {
+  height: 100%;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  background-color: $black-color;
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: $width;
+  @include padding(10px, 30px);
+
+  .nav-brand {
+    display: inline-block;
+    margin-right: auto;
+
+    #logo {
+      height: 50px;
+    }
+
+    @include media() {
+      align-self: center;
+      margin-right: 70px;
+    }
+  }
+
+  .nav-link-toggle {
+    font-size: 26px;
+    color: $text-secondary-color;
+    display: none;
+
+    @include media() {
+      left: 10px;
+      top: 25px;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+
+  .nav-link-item {
+    align-self: center;
+    margin-right: 70px;
+
+    .nav-link {
+      display: inline-block;
+      list-style: none;
+      @include padding(0px, 20px);
+      font-size: 18px;
+
+      .active {
+        @include text-white();
+      }
+
+      a {
+        color: $text-ternary-color;
+        text-decoration: none;
+
+        &:hover {
+          @include text-white();
+        }
+      }
+    }
+
+    @include media() {
+      display: none;
+      margin-right: 70px;
+      margin-top: 10px;
+    }
+  }
+
+  @include media() {
+    flex-direction: column;
+    @include padding(20px, 30px);
+
+    .nav-toggle-show {
+      display: flex;
+    }
+  }
+}
+
+#mission {
+  background-image: $parallax-image-1;
+  display: flex;
+
+  #card-info {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    background-color: $info-bg-black;
+    @include text-center();
+    @include border-radius(6px, 6px, 6px, 6px);
+    @include padding(0px, 40px);
+
+    #info {
+      margin-top: -40px;
+      @include h4();
+
+      h1 {
+        font-size: 50px;
+        @include font-bold();
+      }
+    }
+
+    @include media() {
+      width: $width - 30%;
+      margin-top: 50px;
+    }
+  }
+}
+
+#featured-tea {
+  @include text-center();
+  @include h2();
+  @include h4();
+
+  #tea-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .tea-card {
+      width: 300px;
+      background-color: wheat;
+      @include margin(20px, 20px);
+      @include border-radius(6px, 6px, 6px, 6px);
+
+      img {
+        width: $width;
+        @include border-radius(6px, 6px, 0px, 0px);
+      }
+
+      .tea-info-container {
+        @include text-center();
+        @include margin(10px, 20px);
+
+        p {
+          font-size: 24px;
+          color: $black-color;
+        }
+      }
+    }
+  }
+}
+
+#locations {
+  background-image: $parallax-image-2;
+  @include text-center();
+  @include h2();
+
+  #location-header {
+    padding-top: 20px;
+  }
+
+  #address-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .address {
+      width: 300px;
+      background-color: $info-bg-black;
+      box-shadow: 0 15px 35px $info-bg-black;
+      @include padding(0px, 20px);
+      @include margin(10px, 30px);
+      @include border-radius(6px, 6px, 6px, 6px);
+
+      p {
+        color: $text-secondary-color;
+        font-size: 18px;
+        @include padding(10px, 16px)
+      }
+    }
+  }
+}
+
+footer {
+  #footer {
+    display: flex;
+    @include padding(0px, 60px);
+
+    #footer-logo {
+      font-size: 30px;
+      margin-right: auto;
+
+      h3 {
+        font-size: 28px;
+        @include font-bold();
+      }
+
+      @include media() {
+        margin-right: 0px;
+      }
+    }
+
+    #contact-info {
+      margin-top: 0px;
+      margin-right: 30px;
+
+      p {
+        font-size: 16px;
+        @include text-white();
+      }
+
+      @include media() {
+        margin-top: -20px;
+      }
+    }
+
+    @include media() {
+      flex-direction: column;
+      @include text-center();
+    }
+  }
+
+  #quote {
+    @include padding(10px, 20px);
+    @include text-center();
+    color: $text-secondary-color;
+    background-color: $black-color;
+  }
+}

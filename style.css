@@ -1,0 +1,298 @@
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: #0a1410;
+  font-family: "Sofia", cursive;
+  color: #f0f0f0;
+}
+
+.parallax {
+  height: 100%;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  background-color: #0A0A10;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 10px 30px;
+}
+
+nav .nav-brand {
+  display: inline-block;
+  margin-right: auto;
+}
+
+nav .nav-brand #logo {
+  height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .nav-brand {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-right: 70px;
+  }
+}
+
+nav .nav-link-toggle {
+  font-size: 26px;
+  color: gainsboro;
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .nav-link-toggle {
+    left: 10px;
+    top: 25px;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+}
+
+nav .nav-link-item {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 70px;
+}
+
+nav .nav-link-item .nav-link {
+  display: inline-block;
+  list-style: none;
+  padding: 0px 20px;
+  font-size: 18px;
+}
+
+nav .nav-link-item .nav-link .active {
+  color: #f0f0f0;
+}
+
+nav .nav-link-item .nav-link a {
+  color: gray;
+  text-decoration: none;
+}
+
+nav .nav-link-item .nav-link a:hover {
+  color: #f0f0f0;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .nav-link-item {
+    display: none;
+    margin-right: 70px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px 30px;
+  }
+  nav .nav-toggle-show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#mission {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mission #card-info {
+  margin-left: auto;
+  margin-right: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: rgba(10, 10, 16, 0.9);
+  text-align: center;
+  border-radius: 6px 6px 6px 6px;
+  padding: 0px 40px;
+}
+
+#mission #card-info #info {
+  margin-top: -40px;
+}
+
+#mission #card-info #info h4 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  color: gainsboro;
+}
+
+#mission #card-info #info h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+  #mission #card-info {
+    width: 70%;
+    margin-top: 50px;
+  }
+}
+
+#featured-tea {
+  text-align: center;
+}
+
+#featured-tea h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#featured-tea h4 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  color: gainsboro;
+}
+
+#featured-tea #tea-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#featured-tea #tea-section .tea-card {
+  width: 300px;
+  background-color: wheat;
+  margin: 20px 20px;
+  border-radius: 6px 6px 6px 6px;
+}
+
+#featured-tea #tea-section .tea-card img {
+  width: 100%;
+  border-radius: 6px 6px 0px 0px;
+}
+
+#featured-tea #tea-section .tea-card .tea-info-container {
+  text-align: center;
+  margin: 10px 20px;
+}
+
+#featured-tea #tea-section .tea-card .tea-info-container p {
+  font-size: 24px;
+  color: #0A0A10;
+}
+
+#locations {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  text-align: center;
+}
+
+#locations h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#locations #location-header {
+  padding-top: 20px;
+}
+
+#locations #address-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#locations #address-info .address {
+  width: 300px;
+  background-color: rgba(10, 10, 16, 0.9);
+  -webkit-box-shadow: 0 15px 35px rgba(10, 10, 16, 0.9);
+          box-shadow: 0 15px 35px rgba(10, 10, 16, 0.9);
+  padding: 0px 20px;
+  margin: 10px 30px;
+  border-radius: 6px 6px 6px 6px;
+}
+
+#locations #address-info .address p {
+  color: gainsboro;
+  font-size: 18px;
+  padding: 10px 16px;
+}
+
+footer #footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 60px;
+}
+
+footer #footer #footer-logo {
+  font-size: 30px;
+  margin-right: auto;
+}
+
+footer #footer #footer-logo h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+  footer #footer #footer-logo {
+    margin-right: 0px;
+  }
+}
+
+footer #footer #contact-info {
+  margin-top: 0px;
+  margin-right: 30px;
+}
+
+footer #footer #contact-info p {
+  font-size: 16px;
+  color: #f0f0f0;
+}
+
+@media only screen and (max-width: 600px) {
+  footer #footer #contact-info {
+    margin-top: -20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  footer #footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+footer #quote {
+  padding: 10px 20px;
+  text-align: center;
+  color: gainsboro;
+  background-color: #0A0A10;
+}
+/*# sourceMappingURL=style.css.map */
