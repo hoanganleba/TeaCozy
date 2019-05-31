@@ -1,0 +1,53 @@
+$primary-font: 'Lobster',
+cursive;
+$secondary-font: 'Sofia',
+cursive;
+$bg-black: #0A0A0A;
+$bg-white: #FFFAFA;
+$info-bg-black: #0a0a0ae6;
+$info-bg-white: #FFFAFAe6;
+$black-color: #0A0A10;
+$text-primary-light: #F8F8F8;
+$text-secondary-light: #dcdcdc;
+$text-tertiary-light: #a9a9a9;
+$text-primary-dark: #f9b02a;
+$bold-text: 700;
+$light-text: 400;
+$phone-screen: 600px;
+$width: 100%;
+
+@mixin border-radius($tl, $tr, $bl, $br) {
+    border-radius: $tl $tr $bl $br
+}
+
+@mixin margin($x, $y) {
+    margin: $x $y
+}
+
+@mixin padding($x, $y) {
+    padding: $x $y
+}
+
+@mixin h1 {
+    h1 {
+        font-family: $primary-font;
+        color: $text-primary-dark;
+        font-size: 48px;
+        font-weight: $bold-text;
+    }
+}
+
+@mixin h2 {
+    h2 {
+        font-family: $primary-font;
+        color: $text-primary-dark;
+        font-size: 36px;
+        font-weight: $light-text;
+    }
+}
+
+@mixin media() {
+    @media only screen and (max-width: $phone-screen) {
+        @content;
+    }
+}

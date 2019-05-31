@@ -1,0 +1,40 @@
+$parallax-image-2: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+@import '../color&font.scss';
+
+#locations {
+  background-image: $parallax-image-2;
+  text-align: center;
+  @include h1();
+
+
+  #location-header {
+    padding-top: 50px;
+
+  }
+
+  #address-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .address {
+      @include h2();
+      width: 300px;
+      background-color: $info-bg-white;
+      box-shadow: 0 15px 35px $info-bg-black;
+      transition: .4s;
+      @include padding(20px, 20px);
+      @include margin(20px, 30px);
+      @include border-radius(6px, 6px, 6px, 6px);
+
+      p {
+        transition: .4s;
+        color: $black-color;
+        font-weight: $light-text;
+        font-style: oblique;
+        font-size: 18px;
+        @include padding(10px, 16px)
+      }
+    }
+  }
+}

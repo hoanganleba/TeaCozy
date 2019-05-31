@@ -1,0 +1,56 @@
+@import './color&font.scss';
+
+footer {
+  #footer {
+    display: flex;
+    background-color: $bg-white;
+    transition: .4s;
+    @include padding(0px, 60px);
+
+
+    #footer-logo {
+      display: inline-block;
+      font-size: 30px;
+      margin-right: auto;
+      align-self: center;
+      @include h1();
+
+      @include media() {
+        margin-right: 0px;
+        margin-bottom: 0px;
+      }
+    }
+
+    #contact-info {
+      display: inline-block;
+      margin-right: 30px;
+      align-self: center;
+
+      p {
+        transition: .4s;
+        font-size: 18px;
+        font-style: oblique;
+        color: $black-color;
+        font-weight: $light-text;
+      }
+
+      @include media() {
+        margin-right: 0px;
+      }
+    }
+
+    @include media() {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  #quote {
+    @include padding(10px, 20px);
+    transition: .4s;
+    text-align: center;
+    font-style: oblique;
+    color: $black-color;
+    font-weight: $light-text;
+  }
+}

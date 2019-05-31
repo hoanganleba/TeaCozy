@@ -1,0 +1,65 @@
+@import './color&font.scss';
+
+@mixin blacktheme {
+    background-color: $bg-black;
+}
+
+.dark-theme {
+    @include blacktheme();
+
+    nav {
+        @include blacktheme();
+
+        .nav-link-item {
+            .nav-link {
+                a {
+                    color: $text-primary-light;
+                }
+            }
+        }
+    }
+
+    #mission {
+        #card-info {
+            background-color: $info-bg-black;
+
+            #info {
+                p {
+                    color: $text-primary-light;
+                }
+            }
+        }
+    }
+
+    #featured-tea {
+        p {
+            color: $text-primary-light;
+        }
+    }
+
+    #locations {
+        #address-info {
+            .address {
+                background-color: $info-bg-black;
+
+                p {
+                    color: $text-primary-light;
+                }
+            }
+        }
+    }
+
+    #footer {
+        @include blacktheme();
+
+        #contact-info {
+            p {
+                color: $text-primary-light;
+            }
+        }
+    }
+
+    #quote {
+        color: $text-primary-light;
+    }
+}
