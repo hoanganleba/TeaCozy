@@ -87,7 +87,7 @@
 }
 
 nav {
-  background-color: #FFFAFA;
+  background-color: #FFFAF0;
   -webkit-transition: .4s;
   transition: .4s;
   position: fixed;
@@ -97,7 +97,8 @@ nav {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  border-bottom: 1px solid rgba(118, 135, 152, 0.8);
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   padding: 10px 30px;
 }
 
@@ -156,7 +157,7 @@ nav .slider {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #dcdcdc;
+  background-color: #dbdbdb;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -168,7 +169,7 @@ nav .slider:before {
   width: 16px;
   left: 4px;
   bottom: 4px;
-  background-color: #FFFAFA;
+  background-color: #FFFAF0;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -197,7 +198,7 @@ nav input:checked + .slider:before {
 
 nav .nav-link-toggle {
   font-size: 26px;
-  color: #dcdcdc;
+  color: #dbdbdb;
   display: none;
 }
 
@@ -270,8 +271,8 @@ nav .nav-link-item .nav-link a {
       -ms-grid-row-align: center;
       align-self: center;
   background-color: #FFFAFAe6;
-  -webkit-box-shadow: 0 15px 35px #0a0a0ae6;
-          box-shadow: 0 15px 35px #0a0a0ae6;
+  -webkit-box-shadow: 0px 4px 6px rgba(77, 77, 77, 0.7), 0px 5px 15px rgba(77, 77, 77, 0.1);
+          box-shadow: 0px 4px 6px rgba(77, 77, 77, 0.7), 0px 5px 15px rgba(77, 77, 77, 0.1);
   text-align: center;
   -webkit-transition: .4s;
   transition: .4s;
@@ -342,9 +343,9 @@ nav .nav-link-item .nav-link a {
 
 #featured-tea #tea-section .tea-card {
   width: 300px;
-  background-color: #FFFAF0;
-  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: #FFFAFA;
+  -webkit-box-shadow: 0px 4px 6px rgba(77, 77, 77, 0.7), 0px 5px 15px rgba(77, 77, 77, 0.1);
+          box-shadow: 0px 4px 6px rgba(77, 77, 77, 0.7), 0px 5px 15px rgba(77, 77, 77, 0.1);
   margin: 20px 20px;
   padding: 10px 10px;
   border-radius: 6px 6px 6px 6px;
@@ -352,7 +353,7 @@ nav .nav-link-item .nav-link a {
 
 #featured-tea #tea-section .tea-card img {
   width: 100%;
-  border: 2px solid #FFFFF0;
+  border: 2px solid #FFFFFF;
 }
 
 #featured-tea #tea-section .tea-card .tea-info-container {
@@ -394,8 +395,8 @@ nav .nav-link-item .nav-link a {
 #locations #address-info .address {
   width: 300px;
   background-color: #FFFAFAe6;
-  -webkit-box-shadow: 0 15px 35px #0a0a0ae6;
-          box-shadow: 0 15px 35px #0a0a0ae6;
+  -webkit-box-shadow: 0px 4px 6px rgba(77, 77, 77, 0.7), 0px 5px 15px rgba(77, 77, 77, 0.1);
+          box-shadow: 0px 4px 6px rgba(77, 77, 77, 0.7), 0px 5px 15px rgba(77, 77, 77, 0.1);
   -webkit-transition: .4s;
   transition: .4s;
   padding: 20px 20px;
@@ -424,7 +425,7 @@ footer #footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #FFFAFA;
+  background-color: #FFFAF0;
   -webkit-transition: .4s;
   transition: .4s;
   padding: 0px 60px;
@@ -500,7 +501,7 @@ html,
 body {
   scroll-behavior: smooth;
   font-family: "Sofia", cursive;
-  background-color: #FFFAFA;
+  background-color: #FFFAF0;
   color: #F8F8F8;
   -webkit-transition: 0.4s;
   transition: 0.4s;

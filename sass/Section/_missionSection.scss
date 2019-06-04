@@ -10,7 +10,7 @@ $parallax-image-1: url("https://s3.amazonaws.com/codecademy-content/courses/free
     margin-right: auto;
     align-self: center;
     background-color: $info-bg-white;
-    box-shadow: 0 15px 35px $info-bg-black;
+    box-shadow: $box-shadow;
     text-align: center;
     transition: .4s;
     @include border-radius(6px, 6px, 6px, 6px);

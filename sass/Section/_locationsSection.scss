@@ -21,7 +21,7 @@ $parallax-image-2: url("https://s3.amazonaws.com/codecademy-content/courses/free
       @include h2();
       width: 300px;
       background-color: $info-bg-white;
-      box-shadow: 0 15px 35px $info-bg-black;
+      box-shadow: $box-shadow;
       transition: .4s;
       @include padding(20px, 20px);
       @include margin(20px, 30px);

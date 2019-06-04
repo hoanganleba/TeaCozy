@@ -3,14 +3,17 @@ cursive;
 $secondary-font: 'Sofia',
 cursive;
 $bg-black: #0A0A0A;
-$bg-white: #FFFAFA;
+$bg-white: #FFFAF0;
 $info-bg-black: #0a0a0ae6;
 $info-bg-white: #FFFAFAe6;
 $black-color: #0A0A10;
 $text-primary-light: #F8F8F8;
-$text-secondary-light: #dcdcdc;
-$text-tertiary-light: #a9a9a9;
+$text-secondary-light: hsl(0, 0%, 86%);
+$text-tertiary-light: hsl(0, 0%, 66%);
 $text-primary-dark: #f9b02a;
+$card-color: #FFFAFA;
+$box-shadow: 0px 4px 6px hsla(0, 0%, 30%, .7),
+0px 5px 15px hsla(0, 0%, 30%, .1);
 $bold-text: 700;
 $light-text: 400;
 $phone-screen: 600px;
