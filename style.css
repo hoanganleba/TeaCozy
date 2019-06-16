@@ -6,6 +6,10 @@
   background-color: #0A0A0A;
 }
 
+.dark-theme nav h1 {
+  color: #F8F8F8;
+}
+
 .dark-theme nav .nav-link-item .nav-link a {
   color: #F8F8F8;
 }
@@ -48,6 +52,10 @@
 
 .dark-theme nav {
   background-color: #0A0A0A;
+}
+
+.dark-theme nav h1 {
+  color: #F8F8F8;
 }
 
 .dark-theme nav .nav-link-item .nav-link a {
@@ -99,7 +107,7 @@ nav {
   width: 100%;
   -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  padding: 10px 30px;
+  padding: 0px 30px;
 }
 
 nav .nav-brand {
@@ -107,8 +115,12 @@ nav .nav-brand {
   margin-right: auto;
 }
 
-nav .nav-brand #logo {
-  height: 50px;
+nav .nav-brand h1 {
+  font-weight: 900;
+  font-size: 30px;
+  font-style: oblique;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 @media only screen and (max-width: 600px) {
@@ -132,7 +144,7 @@ nav #switch-button {
 @media only screen and (max-width: 600px) {
   nav #switch-button {
     position: absolute;
-    top: 31px;
+    top: 50px;
     right: 60px;
   }
 }
@@ -183,12 +195,12 @@ nav .slider.round:before {
 }
 
 nav input:checked + .slider {
-  background-color: #f9b02a;
+  background-color: #79C753;
 }
 
 nav input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px #f9b02a;
-          box-shadow: 0 0 1px #f9b02a;
+  -webkit-box-shadow: 0 0 1px #79C753;
+          box-shadow: 0 0 1px #79C753;
 }
 
 nav input:checked + .slider:before {
@@ -198,14 +210,14 @@ nav input:checked + .slider:before {
 
 nav .nav-link-toggle {
   font-size: 26px;
-  color: #dbdbdb;
+  color: #a8a8a8;
   display: none;
 }
 
 @media only screen and (max-width: 600px) {
   nav .nav-link-toggle {
     left: 20px;
-    top: 30px;
+    top: 45px;
     display: initial;
     position: absolute;
     cursor: pointer;
@@ -258,7 +270,7 @@ nav .nav-link-item .nav-link a {
 }
 
 #mission {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-image: url("images/img-mission-background.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -280,9 +292,9 @@ nav .nav-link-item .nav-link a {
   padding: 0px 40px;
 }
 
-#mission #card-info #info h1 {
+#mission #card-info #info h2 {
   font-family: "Lobster", cursive;
-  color: #f9b02a;
+  color: #79C753;
   font-size: 48px;
   font-weight: 700;
 }
@@ -312,11 +324,12 @@ nav .nav-link-item .nav-link a {
 
 #featured-tea {
   text-align: center;
+  padding: 0px 10px;
 }
 
-#featured-tea h1 {
+#featured-tea h2 {
   font-family: "Lobster", cursive;
-  color: #f9b02a;
+  color: #79C753;
   font-size: 48px;
   font-weight: 700;
 }
@@ -366,13 +379,13 @@ nav .nav-link-item .nav-link a {
 }
 
 #locations {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  background-image: url("images/img-locations-background.jpg");
   text-align: center;
 }
 
-#locations h1 {
+#locations h2 {
   font-family: "Lobster", cursive;
-  color: #f9b02a;
+  color: #79C753;
   font-size: 48px;
   font-weight: 700;
 }
@@ -404,9 +417,9 @@ nav .nav-link-item .nav-link a {
   border-radius: 6px 6px 6px 6px;
 }
 
-#locations #address-info .address h2 {
+#locations #address-info .address h3 {
   font-family: "Lobster", cursive;
-  color: #f9b02a;
+  color: #79C753;
   font-size: 36px;
   font-weight: 400;
 }
@@ -440,9 +453,9 @@ footer #footer #footer-logo {
       align-self: center;
 }
 
-footer #footer #footer-logo h1 {
+footer #footer #footer-logo h2 {
   font-family: "Lobster", cursive;
-  color: #f9b02a;
+  color: #79C753;
   font-size: 48px;
   font-weight: 700;
 }
@@ -500,9 +513,8 @@ footer #quote {
 html,
 body {
   scroll-behavior: smooth;
-  font-family: "Sofia", cursive;
   background-color: #FFFAF0;
-  color: #F8F8F8;
+  font-family: "Sofia", cursive;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -512,7 +524,7 @@ section {
 }
 
 .parallax {
-  min-height: 90vh;
+  min-height: 80vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;

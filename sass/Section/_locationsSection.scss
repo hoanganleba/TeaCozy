@@ -1,10 +1,10 @@
-$parallax-image-2: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+$parallax-image-2: url("images/img-locations-background.jpg");
 @import '../color&font.scss';
 
 #locations {
   background-image: $parallax-image-2;
   text-align: center;
-  @include h1();
+  @include h2();
 
 
   #location-header {
@@ -18,7 +18,7 @@ $parallax-image-2: url("https://s3.amazonaws.com/codecademy-content/courses/free
     justify-content: center;
 
     .address {
-      @include h2();
+      @include h3();
       width: 300px;
       background-color: $info-bg-white;
       box-shadow: $box-shadow;

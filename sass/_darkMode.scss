@@ -10,6 +10,10 @@
     nav {
         @include blacktheme();
 
+        h1 {
+            color: $text-primary-light;
+        }
+
         .nav-link-item {
             .nav-link {
                 a {

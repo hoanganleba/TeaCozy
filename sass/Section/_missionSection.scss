@@ -1,4 +1,4 @@
-$parallax-image-1: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+$parallax-image-1: url("images/img-mission-background.jpg");
 @import '../color&font.scss';
 
 #mission {
@@ -17,7 +17,7 @@ $parallax-image-1: url("https://s3.amazonaws.com/codecademy-content/courses/free
     @include padding(0px, 40px);
 
     #info {
-      @include h1();
+      @include h2();
 
       p {
         font-family: $secondary-font;

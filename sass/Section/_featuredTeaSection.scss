@@ -3,7 +3,8 @@
 
 #featured-tea {
   text-align: center;
-  @include h1();
+  padding: 0px 10px;
+  @include h2();
 
   p {
     transition: .4s;

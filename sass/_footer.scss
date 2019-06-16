@@ -13,7 +13,7 @@ footer {
       font-size: 30px;
       margin-right: auto;
       align-self: center;
-      @include h1();
+      @include h2();
 
       @include media() {
         margin-right: 0px;

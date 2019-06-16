@@ -10,14 +10,17 @@ nav {
   display: flex;
   width: $width;
   box-shadow: 0px 4px 6px hsla(0, 0%, 0%, .2);
-  @include padding(10px, 30px);
+  @include padding(0px, 30px);
 
   .nav-brand {
     display: inline-block;
     margin-right: auto;
 
-    #logo {
-      height: 50px;
+    h1 {
+      font-weight: 900;
+      font-size: 30px;
+      font-style: oblique;
+      transition: .4s;
     }
 
     @include media() {
@@ -34,7 +37,7 @@ nav {
 
     @include media() {
       position: absolute;
-      top: 31px;
+      top: 50px;
       right: 60px;
     }
   }
@@ -96,12 +99,12 @@ nav {
 
   .nav-link-toggle {
     font-size: 26px;
-    color: $text-secondary-light;
+    color: $text-tertiary-light;
     display: none;
 
     @include media() {
       left: 20px;
-      top: 30px;
+      top: 45px;
       display: initial;
       position: absolute;
       cursor: pointer;
