@@ -16,7 +16,7 @@ nav {
     display: inline-block;
     margin-right: auto;
 
-    h1 {
+    h2 {
       font-weight: 900;
       font-size: 30px;
       font-style: oblique;
@@ -37,7 +37,7 @@ nav {
 
     @include media() {
       position: absolute;
-      top: 50px;
+      top: 35px;
       right: 60px;
     }
   }
@@ -98,13 +98,11 @@ nav {
   }
 
   .nav-link-toggle {
-    font-size: 26px;
-    color: $text-tertiary-light;
     display: none;
 
     @include media() {
       left: 20px;
-      top: 45px;
+      top: 35px;
       display: initial;
       position: absolute;
       cursor: pointer;
@@ -138,10 +136,10 @@ nav {
 
   @include media() {
     flex-direction: column;
-    @include padding(20px, 30px);
 
     .nav-toggle-show {
       display: flex;
+      margin-bottom: 20px;
     }
   }
 }
