@@ -5,7 +5,7 @@ cursive;
 $bg-black: #0A0A0A;
 $bg-white: #FFFAF0;
 $info-bg-black: #0a0a0ae6;
-$info-bg-white: #FFFAFAe6;
+$info-bg-white: hsla(0, 100%, 99%, 0.91);
 $black-color: #0A0A10;
 $text-primary-light: #F8F8F8;
 $text-secondary-light: hsl(0, 0%, 86%);
@@ -35,7 +35,7 @@ $width: 100%;
     h2 {
         font-family: $primary-font;
         color: $text-primary-dark;
-        font-size: 48px;
+        font-size: 50px;
         font-weight: $bold-text;
     }
 }
@@ -44,7 +44,7 @@ $width: 100%;
     h3 {
         font-family: $primary-font;
         color: $text-primary-dark;
-        font-size: 36px;
+        font-size: 38px;
         font-weight: $light-text;
     }
 }

@@ -237,7 +237,7 @@ nav .nav-brand {
 
 nav .nav-brand h2 {
   font-weight: 900;
-  font-size: 30px;
+  font-size: 20px;
   font-style: oblique;
   -webkit-transition: .4s;
   transition: .4s;
@@ -264,7 +264,7 @@ nav #switch-button {
 @media only screen and (max-width: 600px) {
   nav #switch-button {
     position: absolute;
-    top: 35px;
+    top: 20px;
     right: 60px;
   }
 }
@@ -335,7 +335,7 @@ nav .nav-link-toggle {
 @media only screen and (max-width: 600px) {
   nav .nav-link-toggle {
     left: 20px;
-    top: 35px;
+    top: 21px;
     display: initial;
     position: absolute;
     cursor: pointer;
@@ -430,7 +430,7 @@ nav .nav-link-item .nav-link a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: #FFFAFAe6;
+  background-color: rgba(255, 250, 250, 0.91);
   -webkit-box-shadow: 0px 4px 6px rgba(77, 77, 77, 0.7), 0px 5px 15px rgba(77, 77, 77, 0.1);
           box-shadow: 0px 4px 6px rgba(77, 77, 77, 0.7), 0px 5px 15px rgba(77, 77, 77, 0.1);
   text-align: center;
@@ -443,7 +443,7 @@ nav .nav-link-item .nav-link a {
 #mission #card-info #info h2 {
   font-family: "Lobster", cursive;
   color: #79C753;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 700;
 }
 
@@ -451,7 +451,7 @@ nav .nav-link-item .nav-link a {
   font-family: "Sofia", cursive;
   font-style: oblique;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   color: #0A0A10;
   -webkit-transition: .4s;
   transition: .4s;
@@ -508,7 +508,7 @@ nav .nav-link-item .nav-link a {
 #featured-tea h2 {
   font-family: "Lobster", cursive;
   color: #79C753;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 700;
 }
 
@@ -594,7 +594,7 @@ nav .nav-link-item .nav-link a {
 #locations h2 {
   font-family: "Lobster", cursive;
   color: #79C753;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 700;
 }
 
@@ -615,7 +615,7 @@ nav .nav-link-item .nav-link a {
 
 #locations #address-info .address {
   width: 300px;
-  background-color: #FFFAFAe6;
+  background-color: rgba(255, 250, 250, 0.91);
   -webkit-box-shadow: 0px 4px 6px rgba(77, 77, 77, 0.7), 0px 5px 15px rgba(77, 77, 77, 0.1);
           box-shadow: 0px 4px 6px rgba(77, 77, 77, 0.7), 0px 5px 15px rgba(77, 77, 77, 0.1);
   -webkit-transition: .4s;
@@ -628,7 +628,7 @@ nav .nav-link-item .nav-link a {
 #locations #address-info .address h3 {
   font-family: "Lobster", cursive;
   color: #79C753;
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 400;
 }
 
@@ -638,7 +638,7 @@ nav .nav-link-item .nav-link a {
   color: #0A0A10;
   font-weight: 400;
   font-style: oblique;
-  font-size: 18px;
+  font-size: 20px;
   padding: 10px 16px;
 }
 
@@ -694,7 +694,7 @@ footer #footer #footer-logo {
 footer #footer #footer-logo h2 {
   font-family: "Lobster", cursive;
   color: #79C753;
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 700;
 }
 
