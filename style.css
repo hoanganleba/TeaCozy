@@ -216,8 +216,8 @@
 
 nav {
   background-color: #FFFAF0;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   position: fixed;
   top: 0;
   left: 0;
@@ -239,8 +239,8 @@ nav .nav-brand h2 {
   font-weight: 900;
   font-size: 20px;
   font-style: oblique;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media only screen and (max-width: 600px) {
@@ -290,8 +290,8 @@ nav .slider {
   right: 0;
   bottom: 0;
   background-color: #dbdbdb;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 nav .slider:before {
@@ -302,8 +302,8 @@ nav .slider:before {
   left: 4px;
   bottom: 4px;
   background-color: #FFFAF0;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 nav .slider.round {
@@ -357,8 +357,8 @@ nav .nav-link-item .nav-link {
 }
 
 nav .nav-link-item .nav-link a {
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   color: #0A0A10;
   text-decoration: none;
   font-family: "Lobster", cursive;

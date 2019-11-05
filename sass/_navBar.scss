@@ -1,15 +1,15 @@
-@import './color&font.scss';
-@import './darkMode.scss';
+@import "./color&font.scss";
+@import "./darkMode.scss";
 
 nav {
   background-color: $bg-white;
-  transition: .4s;
+  transition: 0.4s;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   width: $width;
-  box-shadow: 0px 4px 6px hsla(0, 0%, 0%, .2);
+  box-shadow: 0px 4px 6px hsla(0, 0%, 0%, 0.2);
   @include padding(0px, 30px);
 
   .nav-brand {
@@ -20,7 +20,7 @@ nav {
       font-weight: 900;
       font-size: 20px;
       font-style: oblique;
-      transition: .4s;
+      transition: 0.4s;
     }
 
     @include media() {
@@ -63,7 +63,7 @@ nav {
     right: 0;
     bottom: 0;
     background-color: $text-secondary-light;
-    transition: .4s;
+    transition: 0.4s;
 
     &:before {
       position: absolute;
@@ -73,7 +73,7 @@ nav {
       left: 4px;
       bottom: 4px;
       background-color: $bg-white;
-      transition: .4s;
+      transition: 0.4s;
     }
   }
 
@@ -85,15 +85,15 @@ nav {
     border-radius: 50%;
   }
 
-  input:checked+.slider {
+  input:checked + .slider {
     background-color: $text-primary-dark;
   }
 
-  input:focus+.slider {
+  input:focus + .slider {
     box-shadow: 0 0 1px $text-primary-dark;
   }
 
-  input:checked+.slider:before {
+  input:checked + .slider:before {
     transform: translateX(26px);
   }
 
@@ -120,7 +120,7 @@ nav {
       @include padding(0px, 20px);
 
       a {
-        transition: .4s;
+        transition: 0.4s;
         color: $black-color;
         text-decoration: none;
         font-family: $primary-font;
